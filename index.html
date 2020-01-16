@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Dog Images</title>
+    <meta name="description" content="Choose number of random dog images by Sunny Lee 2020">
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+</head>
+<body>
+    <!--Question 1 from Simple Get Requests-->
+    <section class="task1">
+        <h1>Show Random Number of Dog Images</h1>
+
+        <form>
+            <label for="question">How many images of dogs do you want to see? (1-50)</label>
+            <input type="number" name="question" id="userNumber" min="1" max="50" value="3" required>
+            <button type="submit" class="submitButton">Fetch!</button>
+        </form>
+        
+        <section class="results hidden">
+            <h2>Here are your dog pics!</h2>
+            <div class="imageSection"></div>  
+        </section>
+    </section>
+
+    <!--Question 3 from Simple Get Requests-->
+    <section class="task3">
+      <!--3. Create an app that loads a single random image for a specific breed, based on a user input. 
+            This app should account for the happy case when the breed is found, as well as the unhappy case when it is not. 
+            Use the endpoint described in the "RANDOM IMAGE FROM A BREED COLLECTION" section of this page of the DogAPI docs. 
+            Note that the API will return an HTTP status code of 404 along with a JSON object with info about the error if a request is made for a breed that can't be found.-->
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+   </body>
+</html>
