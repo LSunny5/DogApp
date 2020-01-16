@@ -8,13 +8,6 @@ function getDogImages(userNumber) {
         .then(responseJson => displayImages(responseJson))
         .catch(error=>alert('Something is not working, please try again in a bit.'));
  }
- 
- 
-
-
-
-
-
 
 //show the images
  function displayImages(responseJson) {
@@ -26,28 +19,15 @@ function getDogImages(userNumber) {
     console.log(responseJson);
     /*******END SOLUTION for Question 1**********/
 
+    //erase section and overwrite previous photos
+    $('.imageSection').html(' ');
+
+    //add the pictures of dogs to section
     for (let one of responseJson.message) {
         $('.imageSection').append(`<img src="${one}">`);
     }
-
-   //$('.imageSection').html(results);
-
-
-
    $('.results').removeClass('hidden');
  }
- 
-
-
-
-
-
-
-
-
-
-
-
  
  //starting the app, after user inputs
  function startApp() {
